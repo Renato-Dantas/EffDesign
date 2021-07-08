@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    list-style: none;
+    margin-right: 55px;
+}
+
+main{
+    height: auto;
+    background-color: #FAE8DA;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about{
+    height: 300px;
+    width: 400px;
+    background-color: red;
+    justify-self: flex-start;
+}
+
+.gallery{
+    height: 100%;
+    width: 800px;
+    margin-left: 25px;
+    margin-top: 25px;
+    background-color: black;
+    align-self: flex-start;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cardImg{
+    width: 100%;
+    height: 100%;
+}
+
+.img-gallery{
+    width: 100%;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+#serviceTitle{
+    width: 600px;
+}
+
+.container{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#imgTitle{
+    width: 100px;
+    height: 100px;
+}
+
+.area{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    margin-right: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+.design{
+    background-image: url(../images/design.jpg);
+    background-size: cover;
+}
+
+.build{
+    background-image: url(../images/build.jpg);
+    background-size: cover;
+}
+
+.install{
+    background-image: url(../images/install.jpg);
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.pictureTitle{
+    background-color: rgba(0,0,0,.6);
+    border-radius: 5px;
+    height: 80px;
+    width: 80%;
+    align-self: center;
+    color: white;
+    padding: 15px;
+    text-align: justify;
+}
+
+footer{
+    background-color: black;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photos{
+    height: 150px;
+    border: 1px solid goldenrod;
+}
+

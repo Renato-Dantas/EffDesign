@@ -9,10 +9,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap; /* AQ NÃO FUNCIONA*/
 }
 
 header{
-    height: 100px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,8 +24,12 @@ header{
     margin-right: 55px;
 }
 
+.nav:hover{
+    background-color: gold;
+}
+
 main{
-    height: auto;
+    height: 600px;
     background-color: #FAE8DA;
     display: flex;
     flex-direction: row;
@@ -36,7 +41,6 @@ main{
 .about{
     height: 300px;
     width: 400px;
-    background-color: red;
     justify-self: flex-start;
 }
 

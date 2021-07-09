@@ -22,11 +22,26 @@ header{
 .nav{
     list-style: none;
     margin-right: 55px;
+    padding: 10px;
 }
 
+.imgLogo{
+    width: 300px;
+    margin-right: 55px;
+    list-style: none;
+    padding: 10px;
+}
 .nav:hover{
     background-color: gold;
+    border-radius: 5px;
 }
+
+.imgLogo:hover{
+    background-color: white;
+    padding: 0;
+}
+
+
 
 main{
     height: 600px;

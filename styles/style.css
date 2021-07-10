@@ -82,8 +82,10 @@ main{
 
 .cardImg{
     width: 100%;
+    height: 500px;
     border: 1px solid goldenrod; 
     border-radius: 10px;
+    filter: brightness(1.2);
 }
 
 .img-gallery{
@@ -183,8 +185,8 @@ footer{
     color: white;
     margin: 100px auto;
     text-align: center;
-
 }
+
 p{
     padding: 5px;
 }
@@ -209,24 +211,25 @@ p{
     }
 
     .gallery{
-        width: auto;
+        /* width: auto; */
         margin: auto;
         padding: 5px;
     }
 
 }
 
-@media screen and (max-width:420px){
+@media screen and (max-width:500px){
     #aboutImg{
         width: 100vw;
     }
 
-    #cardImg{
-        width: 60%;
+    .cardImg{
+        width: 100%;
+        height: 200px;
     }
 
     .gallery{
-        width: 60%;
+        width: 100%;
 
     }
     .about{

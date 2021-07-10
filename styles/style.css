@@ -12,9 +12,6 @@
 
 body{
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 header{
@@ -22,6 +19,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .imgLogo{
@@ -52,9 +50,29 @@ main{
     justify-self: flex-start;
 }
 
+#aboutImg{
+    width: 100%;
+    height: 100%;
+}
+
+#btnContact{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+    border: 1px solid goldenrod;
+    padding: 5px;
+    font-family: minhaFonte;
+    font-size: 30px;
+}
+
+#btnContact:hover{
+    background-color: white;
+}
+
 .gallery{
     height: auto;
-    width: 800px;
+    width: auto;
     margin-left: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -85,14 +103,14 @@ section{
 }
 
 #serviceTitle{
-    width: 600px;
+    width: 100%;
 }
 
 .container{
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -104,7 +122,6 @@ section{
 .area{
     width: 300px;
     height: 300px;
-    margin-right: 20px;
     border: 1px solid goldenrod;
     display: flex;
     justify-content: center;
@@ -179,4 +196,53 @@ p{
 
 .web{
     color:pink;
+}
+
+@media screen and (max-width:950px){
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .gallery{
+        width: auto;
+        margin: auto;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width:420px){
+    #aboutImg{
+        width: 100vw;
+    }
+
+    #cardImg{
+        width: 60%;
+    }
+
+    .gallery{
+        width: 60%;
+
+    }
+    .about{
+        text-align: center;
+        width: 100vw;
+    }
+    #aboutImg{
+        width: 60%;
+        margin: auto;
+    }
+
+    .headerText{
+        font-size: 25px;
+        text-align: center;
+    }
+    .imgLogo{
+        width: 100px;
+    }
 }

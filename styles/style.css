@@ -9,7 +9,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap; /* AQ NÃO FUNCIONA*/
 }
 
 header{
@@ -60,21 +59,20 @@ main{
     width: 800px;
     margin-left: 25px;
     margin-top: 25px;
+    margin-bottom: 25px;
     align-self: center;
     overflow: hidden;
-
 }
 
 .cardImg{
     width: 100%;
-    border: 1px solid black; 
+    border: 1px solid goldenrod; 
     border-radius: 10px;
 }
 
 .img-gallery{
     width: 100%;
     border-radius: 10px;
-
 }
 
 section{
@@ -109,7 +107,7 @@ section{
     width: 300px;
     height: 300px;
     margin-right: 20px;
-    border: 1px solid black;
+    border: 1px solid goldenrod;
     display: flex;
     justify-content: center;
     border-radius: 25px;
@@ -146,13 +144,39 @@ section{
 
 footer{
     background-color: black;
-    height: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .photos{
     height: 150px;
-    border: 1px solid goldenrod;
+    border-top: 3px solid goldenrod;
+    border-bottom: 3px solid goldenrod;
+    display: flex;
+    flex-direction: row;
 }
 
+.imgSmall{
+    width: 150px;
+}
+
+.contact{
+    color: white;
+    margin: 100px auto;
+    text-align: center;
+
+}
+p{
+    padding: 5px;
+}
+
+#insta{
+    margin-top: 25px;
+    width: 100px;
+}
+
+a{
+    color:pink;
+}

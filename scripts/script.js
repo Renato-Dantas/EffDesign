@@ -1,21 +1,26 @@
-let image = document.querySelectorAll('.cardImg')
-let time = 2000
-let idx = 0
-let numImgs = 6
 
+let time = 2000
+let currentImageIndex = 0
+let images = document.querySelectorAll('.gallery img')
+let max = images.length;
 
 function nextImage(){
-    image[0].setAttribute('src', `../images/img${idx}.jpeg`)
-    idx++
-    if(idx > numImgs){
-        idx = 0
+    images[currentImageIndex].classList.remove('cardImg')
+    currentImageIndex++
+
+    if(currentImageIndex>= max){
+        currentImageIndex = 0
     }
+
+    images[currentImageIndex].classList.add('cardImg')
 }
 
 function start(){
     setInterval(()=>{
         nextImage()
-    }, time)
+    },time)
 }
 
 window.addEventListener('load', start)
+
+// 0 1 8 12 13 19
